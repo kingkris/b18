@@ -1,0 +1,70 @@
+body{
+  margin: 0;
+
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height:24px;
+  color: #636363;
+  font-weight: 500;
+
+  overflow-y: scroll;
+  background-color: #E2E5E8;
+
+}
+
+.lead{
+  color: #292929;
+  font-size: 24px;
+  letter-spacing: -0.19px;
+  line-height: 34px;
+  padding-top: 194px;
+}
+.lead strong{
+  font-weight: 600;
+  color: #0872ba;
+}
+
+
+
+
+/*=============================================
+=            Layout styles            =
+=============================================*/
+
+.bg-white{
+  background-color: #fff;
+  margin: 52px 0 0;
+  background-image: url('../img/lady-with-calci.png'), url('../img/up-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: 75% 100%, 110% 100%;
+  background-attachment: fixed, scroll;
+  min-height: 100vh;
+}
+.bg-green{
+  background-color: rgba(48, 173, 23, 0.418);
+  background-image: url('../img/lady-with-calci.png');
+  background-repeat: no-repeat;
+  background-position: 30% 100%;
+  background-attachment:  scroll;
+  min-height: 100vh
+}
+
+.container{
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container p{
+  margin-right: 240px;
+}
+
+.spacer{
+  min-height: 2000px;
+  border-left: 1px dashed crimson;
+}
+/*=====  End of Layout styles  ======*/
+
+
+
+
