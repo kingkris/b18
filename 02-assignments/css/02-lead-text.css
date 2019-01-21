@@ -40,14 +40,16 @@ body{
   background-position: 75% 100%, 110% 100%;
   background-attachment: fixed, scroll;
   min-height: 100vh;
+  padding: 1px 0
 }
 .bg-green{
-  background-color: rgba(48, 173, 23, 0.418);
+  background-color: rgba(35, 173, 23, 0.548);
   background-image: url('../img/lady-with-calci.png');
   background-repeat: no-repeat;
   background-position: 30% 100%;
   background-attachment:  scroll;
-  min-height: 100vh
+  min-height: 100vh;
+  padding: 1px 0
 }
 
 .container{
@@ -64,6 +66,49 @@ body{
   border-left: 1px dashed crimson;
 }
 /*=====  End of Layout styles  ======*/
+
+
+
+.box1{
+  background-color: crimson;
+  border: 5px  solid #000;
+  color: #FFF;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 300px;
+}
+.box2{
+  background-color: crimson;
+  border: 5px  solid #000;
+  color: #FFF
+}
+
+
+.feature{
+  box-sizing: border-box;
+  background-color: #005AEE;
+  border-radius: 10px;
+  color: #FFF;
+  width: 270px;
+  margin: 20px auto;/*  some message */
+
+  background-image: url('../img/On_time_delivery_icon.png');
+  background-repeat: no-repeat;
+  background-position: 167px 30px;
+  padding: 147px 30px 30px;
+}
+.feature h2{
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 22px;
+  margin-top: 0;
+}
+.feature p{
+  line-height: 20px;
+  margin: 0;
+}
 
 
 
