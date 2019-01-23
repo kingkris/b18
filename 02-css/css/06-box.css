@@ -246,3 +246,114 @@ Box related important links
 /* width = width  */
 /* padding and border are will be within the width specified */
 
+
+
+.parent0{
+    background-color: lightgreen;
+    border: 5px solid #000;
+    margin: 20px;
+}
+.parent0 div{ border: 5px solid red;}
+.parent0 .child1{ border-color: orange; }
+.parent0 .child2{ border-color: green }
+
+/*=============================================
+=            Demo of floats            =
+=============================================*/
+
+.parent{
+    background-color: lightgreen;
+    border: 5px solid #000;
+    margin: 20px;
+}
+.parent span,
+.parent div{
+    border: 5px solid red;
+}
+
+.parent .child1{
+    float: left;
+    border-color: orange;
+    margin: 10px;
+}
+.parent .child2{
+    border-color: green;
+    background-color: salmon;
+    float: right;
+    margin: 10px;
+}
+.parent .child3{}
+
+
+/* ~  clear: none | left | right | both */
+.clear{
+    clear: both;
+}
+
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+/**
+ *
+ * Layout1 styles
+ *
+ */
+
+.layout1{
+    background-color: coral;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.layout1:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.layout1 .logo{
+    float: left;
+}
+
+.layout1 .main-linkz{
+    float: right;
+    border: 1px solid #000;
+    margin-top: 10px;
+}
+
+
+
+/**
+ *
+ * Layout2 styles
+ *
+ */
+
+ .layout2{
+    background-color: silver;
+    margin: 20px;
+    border-radius: 10px;
+}
+.layout2:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.layout2 .content{
+    float: left;
+    width: 200px;
+    border: 1px solid #000;
+    min-height: 200px;
+}
+.layout2 .features{
+    float: right;
+    width: calc(100% - 250px);
+    border: 1px solid #000;
+
+}
