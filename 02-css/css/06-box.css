@@ -353,7 +353,125 @@ Box related important links
 }
 .layout2 .features{
     float: right;
-    width: calc(100% - 250px);
+    width: calc(100% - 230px);
+    border: 1px solid #000;
+}
+
+/**
+ *
+ * Layout3 styles
+ *
+ */
+
+ .layout3{
+    background-color: silver;
+    margin: 20px;
+    border-radius: 10px;
+}
+.layout3:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.layout3 .content{
+    float: left;
+    width: 200px;
+    border: 1px solid #000;
+    min-height: 200px;
+}
+.layout3 .features{
+    float: right;
+    width: 700px;
     border: 1px solid #000;
 
 }
+
+/**
+ *
+ * Layout4 styles
+ *
+ */
+
+ .layout4{
+    background-color: silver;
+    margin: 20px;
+    border-radius: 10px;
+}
+.layout4:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.layout4 .content{
+    float: left;
+    width: 200px;
+    border: 1px solid #000;
+    min-height: 200px;
+}
+.layout4 .features{
+    border: 1px solid #000;
+    margin-left: 230px;
+
+}
+
+
+/*=============================================
+=            Assignment - pawtastic           =
+=============================================*/
+
+.row{
+    margin: 20px 0;
+    box-sizing: border-box;
+}
+.row *{
+    box-sizing: border-box;
+}
+.row:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.col-left{
+    background-color: #4b4f67;
+    padding: 30px 30px 150px;
+    background-image: url('../img/dog.png');
+    background-repeat: no-repeat;
+    background-position: 140% bottom;
+    background-size: 60%;
+}
+.col-right{
+    background-color: #F7ECEB;
+}
+
+@media (min-width:768px){
+    .col-left{
+        float: left;
+        width: 40%;
+        padding: 78px 62px 392px 128px;
+        background-position: center bottom;
+        background-size: 100%;
+    
+    }
+    .col-right{
+        float: right;
+        width:60%;
+    }
+}
+
+.feature{
+
+}
+
+
+
+/*=====  End of Assignment - pawtastic  ======*/
+
+
+
+
+
+
+
+
