@@ -433,39 +433,154 @@ Box related important links
     display: block;
     clear: both;
 }
+
+
+/* Setting typography */
+
+
+.container{
+    transition: all 250ms ease;
+}
+@media(min-width:768px){
+    .container{
+        width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media(min-width:980px){
+    .container{
+        width: 960px;
+    }
+}
+@media(min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+
 .col-left{
     background-color: #4b4f67;
-    padding: 30px 30px 150px;
+    padding: 30px;
     background-image: url('../img/dog.png');
     background-repeat: no-repeat;
     background-position: 140% bottom;
     background-size: 60%;
+    color: #FFF;
 }
-.col-right{
-    background-color: #F7ECEB;
-}
-
 @media (min-width:768px){
     .col-left{
         float: left;
         width: 40%;
-        padding: 78px 62px 392px 128px;
+        padding: 40px 20px 180px 30px;
         background-position: center bottom;
         background-size: 100%;
-    
     }
+}
+@media (min-width:980px){
+    .col-left{
+        padding: 54px 62px 202px 62px;
+    }
+}
+@media (min-width:1200px){
+    .col-left{
+        padding: 78px 62px 392px 128px;
+    }
+}
+.col-left img{
+    display: block;
+    border: 1px solid #000;
+    max-width: 50%;
+    transition: all 250ms ease;
+}
+.col-left h1{
+    font-size: 24px;
+    border: 1px solid #000;
+    font-weight: bold;
+}
+.col-left ul{
+    border: 1px solid #000;
+    padding: 0 40px 0 15px;
+
+}
+@media (min-width:980px){
+    .col-left img{
+        max-width: 100%;
+    }
+    .col-left h1{
+        font-size: 34px;
+    }
+}
+
+
+.col-right{
+    background-color: #F7ECEB;
+    padding: 20px;
+}
+@media (min-width:768px){
     .col-right{
         float: right;
         width:60%;
+        padding: 30px;
     }
 }
+@media (min-width:1200px){
+    .col-right{
+        padding: 64px 54px 54px 128px;
+    }
+}
+.col-right h2{
+    font-size: 32px;
+    line-height: 40px;
+}
 
-.feature{
+.product-3col{
+    background-color: #ebd0ce;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+.product-3col:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.product-3col img{
+    background-color: #FFF;
+    float: left;
+    width: 64px;
+    height: 64px;
+    padding: 10px;
+    border-radius: 50%;
+    margin:27px 30px;
+}
+.product-3col .price{
+    float: right;
+    font-size: 14px;
+    color: #545871;
+    padding: 24px 34px;
+    border-left: 1px solid #f7eceb;
+    width: 150px
+    
+}
+.product-3col .price strong{
+    display: block;
+    font-size: 28px;
 
 }
 
-
-
+.product-3col .prod-desc{
+    border: 1px solid #000;
+    margin-left: 124px;
+    margin-right: 160px;
+}
+@media (min-width:768px) and (max-width:979px){
+    .product-3col .prod-desc{
+        margin-left: 20px;
+        margin-right: 20px;
+        clear: both;
+    }
+    
+}
 /*=====  End of Assignment - pawtastic  ======*/
 
 
