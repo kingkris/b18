@@ -583,10 +583,41 @@ Box related important links
 }
 /*=====  End of Assignment - pawtastic  ======*/
 
+.bg-red{
+    background-color: #F00;
+}
 
+/* Opacity Demo */
+.opacity-demo{
+    font-size: 80px;
+    font-weight: bold;
+    border: 10px solid #000;
+    background-color: #0f03;
+    color: #0008;
+    opacity: 0.2;
+    transition: all 250ms ease;
+}
 
+.opacity-demo:hover{
+    opacity: 1;
+}
 
+.box{
+    border: 4px solid #000;
+    background-color: #fff;
+    font-size: 30px;
+}
+.dn-demo{
+    display: none;
+}
+.visibility-demo{
+    visibility: hidden
+}
 
-
+.text-col-demo {
+    column-count: 3;
+    column-gap: 30px;
+    column-rule: 1px solid rgba(28,110,164,0.5);
+}
 
 

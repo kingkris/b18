@@ -16,7 +16,7 @@
 
 
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/06-box.css">
+  <link rel="stylesheet" href="css/07-position.css">
 </head>
 <body dir="ltr">
   <!-- This is a comment -->
@@ -30,7 +30,7 @@
         <li><a href="04-backgrounds.html">Background</a></li>
         <li><a href="05-border.html">Border</a></li>
         <li><a href="06-box.html">Box</a></li>
-        <li><a href="07-position.html">Position</a></li>
+        <li class="active"><a href="07-position.html">Position</a></li>
         <li><a href="08-at-rules.html">@rules</a></li>
         <li><a href="09-font-icons.html">Font Icons</a></li>
         <li><a href="10-animations.html">Animations</a></li>
@@ -47,14 +47,46 @@
   </header>
   <section>
     <div class="demo-wrap">
-      <h2 class="-title">demo of width</h2>
-
-      <div class="dabba">This is div</div>
-      <span class="dabba">This is a span</span>
-
-      <hr class="mar-20">
+      <h2 class="-title">demo of Position Static</h2>
 
 
+      <div class="container">
+        <div class="static-demo">
+          This is div.static-demo
+        </div>
+      </div>
+
+
+      <h2 class="-title">demo of Position Relative</h2>
+
+
+      <div class="container">
+        <div class="relative-demo relative1">
+          This is div.relative-demo 1
+        </div>
+        <div class="relative-demo relative2">
+          This is div.relative-demo 2
+        </div>
+        <div class="static-demo">
+          This is div.static-demo
+        </div>
+      </div>
+
+
+      <h2 class="-title">demo of Position Absolute</h2>
+
+
+      <div class="container abs-demo">
+        <div class="orange">orange</div>
+        <div class="blue">blue</div>
+        <div class="black">black</div>
+        <div class="green">green</div>
+        <div class="limegreen">limegreen</div>
+        <div class="wheat">wheat</div>
+        <div class="indigo">indigo</div>
+      </div>
+
+<a href="#" class="sticky-btn">Contact me</a>
 
       <h1>Resources</h1>
 

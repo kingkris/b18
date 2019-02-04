@@ -62,4 +62,101 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
    ========================================================================== */
 
 
-   
+   .container{
+       border: 5px solid #000;
+       padding: 10px;
+   }
+
+.static-demo{
+    border: 1px solid #000;
+    top: 100px;
+    right: 100px;
+    position: static;
+}
+
+.relative-demo{
+    border: 1px solid #000;
+    position: relative;
+    background-color: #fff;
+    top:30px;
+    left: 100px;
+}
+
+.relative1{
+    z-index: 2;
+}
+
+.relative2{
+    top: 15px;
+    z-index: 1;
+}
+
+
+
+/**
+ *
+ * Colors
+ *
+ */
+ .orange{background-color: orange;}
+ .blue{background-color: blue;color: #FFF}
+ .black{background-color: black;color: #FFF}
+ .green{background-color: green;}
+ .limegreen{background-color: limegreen;}
+ .wheat{background-color: wheat;}
+ .indigo{background-color: indigo;color: #FFF}
+
+
+
+
+
+.abs-demo  {
+    position: relative;
+}
+.abs-demo > div {
+    border: 2px solid #000;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+.abs-demo > div:last-child {
+    margin-bottom: 0
+}
+
+.abs-demo > div.black {
+    border-color: crimson;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+.abs-demo > div.blue {
+    position: relative;
+}
+
+
+.sticky-btn{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: limegreen;
+    border-radius: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #FFF;
+    line-height: 100px;
+    z-index: 100;
+}
+
+
+
+
+
+
+
