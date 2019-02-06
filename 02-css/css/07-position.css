@@ -259,12 +259,36 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
 .img-card nav a:after{
     width: 20px;
     height: 3px;
-    background-color: #fff;
+    background-color: #555;
     content:"";
     position: absolute;
 }
 
+.img-card nav a.active:after{
+    background-color: #FFF;
+}
 
+
+
+/*=============================================
+=            demo of position: sticky            =
+=============================================*/
+
+
+.dabba{
+    padding: 20px;
+    background-color: wheat;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.dabba h2{
+    position: sticky;
+    top: 5px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
 
 
 
