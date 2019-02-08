@@ -87,7 +87,9 @@ http://animista.net/
 
 
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"]:before, [class*=" icon-"]:before,
+.main-linkz li a:before
+  {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'css-journey' !important;
     speak: none;
@@ -105,8 +107,8 @@ http://animista.net/
   .icon-activity:before             {content: "\e900";}
   .icon-anchor:before               { content: "\e909";}
   .icon-aperture:before             { content: "\e90a";}
-  .icon-arrow-up-circle:before {content: "\e915";}
-  .icon-at-sign:before { content: "\e918";}
+  .icon-arrow-up-circle:before      {content: "\e915";}
+  .icon-at-sign:before              { content: "\e918";}
   .icon-award:before {content: "\e919";}
   .icon-battery-charging:before {content: "\e91d";}
 .icon-book-open:before {
@@ -169,4 +171,84 @@ content: "\e9d7";
 .icon-target:before {
 content: "\e9dc";
 }
+
+
+
+
+
+/*=============================================
+=            Main Linkz style            =
+=============================================*/
+
+.x-wrap{background-color: #f7ffcb;}
+.x-wrap:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.menucol{
+  width: 220px;
+  float: left;
+  background-color: #3A3E46;
+  height: 100vh;
+  padding: 15px;
+}
+
+.main-linkz{
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.main-linkz li{}
+.main-linkz li a{
+  position: relative;
+  display: block;
+  padding: 15px 15px 15px 40px;
+  border-bottom: 1px solid #2C2C2C;
+  color: #A8A8A8;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.main-linkz li a:before{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: #232831;
+  text-align: center;
+  line-height: 24px;
+  font-size: 14px;
+}
+.main-linkz li.active a,
+.main-linkz li a:hover{
+  color: #FCB415;
+}
+
+.main-linkz li.active a:before,
+.main-linkz li a:hover:before{
+  background-color: #FCB41555;
+  color: #FCB415;
+}
+.main-linkz li.active a::after,
+.main-linkz li a:hover::after{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-right: 1px solid #FCB415;
+  border-bottom: 1px solid #FCB415;
+  content:"";
+  transform: rotate(-45deg)
+}
+
+
 
