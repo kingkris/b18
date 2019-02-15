@@ -13,8 +13,34 @@ Grid related style properties
 +++++++++++++++++++++++++++++++++++++++++++
 
 
+grid
+grid-area
+grid-auto-columns
+grid-auto-flow
+grid-auto-rows
+grid-column
+grid-column-end
+grid-column-gap
+grid-column-start
+grid-gap
+grid-row
+grid-row-end
+grid-row-gap
+grid-row-start
+grid-template
+grid-template-areas
+grid-template-columns
+grid-template-rows
+
+
+
+
+
+
 Grids
 -----------------------
+https://www.mozilla.org/en-US/developer/css-grid/
+
 http://caniuse.com/#feat=css-grid
 
 https://www.w3.org/TR/css3-grid-layout/
@@ -22,6 +48,17 @@ https://www.w3.org/TR/css3-grid-layout/
 https://blogs.msdn.microsoft.com/ie/2011/04/14/ie10-platform-preview-and-css-features-for-adaptive-layouts/
 
 https://css-tricks.com/snippets/css/complete-guide-grid/
+
+
+https://alligator.io/css/css-grid-layout-fr-unit/
+
+https://css-tricks.com/introduction-fr-css-unit/
+
+
+https://gridbyexample.com/examples/
+
+
+
 
 
 CSS NAming
@@ -263,7 +300,39 @@ h1, h2, h3, h4, h5, h6{
 
 
 
+/*=====  Grid based boxes  ======*/
 
+
+.grid-list1{
+    margin: 50px auto;
+    background-color: lightblue;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+}
+@media (min-width:560px){
+    .grid-list1{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width:768px){
+    .grid-list1{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width:980px){
+    .grid-list1{
+        grid-template-columns: 1fr 1fr 2fr;
+    }
+}
+
+.box{
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 4em;
+}
 
 
 
