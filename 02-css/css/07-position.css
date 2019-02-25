@@ -191,6 +191,12 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
     border-radius: 8px;
     display: block;
 }
+.img-card .article-video{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
 .img-card .logo-wrap{
     position: absolute;
     top: 35px;

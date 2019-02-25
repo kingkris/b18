@@ -50,29 +50,193 @@
   </header>
   <section>
     <div class="demo-wrap">
-
-
       <div class="responsive-img">
         <img src="img/learn-to-build-beautiful-websites.jpg" alt="beautiful Images">
       </div>
-
-
-
-
-      srcset
-
-
-
-
-
-
-
-
-
-
-
     </div>
   </section>
+	<div class="video-banner">
+		<video  autoplay="true"
+		  poster="media/working-with-espresso.jpg" >
+		  <source
+		    src="media/working-with-espresso.webm"
+		    type="video/webm">
+		  <source
+		    src="media/working-with-espresso.mp4"
+		    type="video/mp4">
+		  <source
+		    src="media/working-with-espresso.ogv"
+		    type="video/ogg">
+		  Your browser doesn't support HTML5 video tag.
+		</video>
+		<div class="banner-text">
+			<h2>here come some text</h2>
+		</div>
+	</div>
+	<div class="video ">
+		<video width="480" controls
+		  poster="media/working-with-espresso.jpg" >
+		  <source
+		    src="media/working-with-espresso.webm"
+		    type="video/webm">
+		  <source
+		    src="media/working-with-espresso.mp4"
+		    type="video/mp4">
+		  <source
+		    src="media/working-with-espresso.ogv"
+		    type="video/ogg">
+		  Your browser doesn't support HTML5 video tag.
+		</video>
+	</div>
+
+<audio autobuffer autoloop loop controls>
+	<source src="/media/audio.oga">
+	<source src="/media/audio.wav">
+	<object type="audio/x-wav" data="/media/audio.wav" width="290" height="45">
+		<param name="src" value="/media/audio.wav">
+		<param name="autoplay" value="false">
+		<param name="autoStart" value="0">
+		<p><a href="/media/audio.wav">Download this audio file.</a></p>
+	</object>
+</audio>
+
+<audio src="media/APPLAUSE.WAV" autobuffer controls></audio>
+
+	<div class="video ">
+		<video width="480" controls >
+		  <source
+		    src="media/jilebi.mp4"
+		    type="video/mp4">
+		  Your browser doesn't support HTML5 video tag.
+		</video>
+	</div>
+		<h2 class="sub-title"><span>Demo of</span> Responsive images IMG tag normal way</h2>
+		<div class="demo responsive-img">
+				<img src="img/banner-desktop.jpg" alt="Banner" />
+		</div>
+
+		<h2 class="sub-title"><span>Demo of</span> Responsive images IMG tag srcset attribute</h2>
+		<div class="demo responsive-img">
+				<img  src="img/banner-mobile.jpg"
+							srcset="img/banner-mobile.jpg 420w,
+										 img/banner-tab.jpg 768w,
+										 img/banner-laptop.jpg 1024w,
+										 img/banner-desktop.jpg 1600w"
+						  sizes="(max-width: 480px) 420px,
+            				 (max-width: 820px) 768px,
+            				 (max-width: 1200px) 1024px,
+            				 1600px"
+							alt="Banner" />
+		</div><!-- eo .demo -->
+<div class="demo">
+	<img
+		src="https://api.fnkr.net/testimg/400x300/00CED1/FFF/?text=420"
+		sizes="(max-width: 500px) 100vw,
+					 (max-width: 768px) 50vw,
+					 calc(33vw - 100px)"
+		srcset="https://api.fnkr.net/testimg/200x200/00CED1/FFF/?text=200 200w,
+						https://api.fnkr.net/testimg/400x300/00CED1/FFF/?text=400 400w,
+						https://api.fnkr.net/testimg/800x400/00CED1/FFF/?text=800 800w,
+						https://api.fnkr.net/testimg/1600x500/00CED1/FFF/?text=1600 1600w"
+		alt="Kettlebell Swing" />
+</div><!-- /.demo -->
+
+
+		<h2 class="sub-title"><span>Responsive Images</span> IMG tag srcset attribute with different resolutions</h2>
+		<div class="demo responsive-img">
+				<img srcset="img/banner-laptop.jpg 1x,
+										 img/banner-desktop.jpg 2x"
+            	src="img/banner-laptop.jpg"
+							alt="Banner" />
+		</div><!-- eo .demo -->
+
+	<div class="width-demo">
+		<div class="dabba">
+			<img src="https://api.fnkr.net/testimg/500x200/d1a830/FFF/?text=500px">
+		</div>
+	</div><!-- /.container -->
+<hr />
+		<h2 class="sub-title"><span>Demo of</span> Images in aspect ratio</h2>
+		<div class="demo">
+			<h3>Square images</h3>
+			<div class="photos">
+				<div class="photo">
+					<div>
+						<div class="img-wrap _4x3">
+							<img src="https://api.fnkr.net/testimg/500x200/d1a830/FFF/?text=500px" alt="mobile" />
+						</div>
+						<h2>Some text</h2>
+					</div>
+				</div><!-- /.photo -->
+				<div class="photo">
+					<div>
+						<div class="img-wrap _2x1">
+							<img src="img/banner-mobile.jpg" alt="mobile" />
+						</div>
+						<h2>Some text</h2>
+					</div>
+				</div><!-- /.photo -->
+				<div class="photo">
+					<div>
+						<div class="img-wrap _4x3">
+							<img src="img/banner-mobile.jpg" alt="mobile" />
+						</div>
+						<h2>Some text</h2>
+					</div>
+				</div><!-- /.photo -->
+				<div class="photo">
+					<div>
+						<div class="img-wrap _4x3">
+							<img src="img/banner-mobile.jpg" alt="mobile" />
+						</div>
+						<h2>Some text</h2>
+					</div>
+				</div><!-- /.photo -->
+			</div><!-- /.photos -->
+		</div><!-- eo .demo -->
+
+		<h2 class="sub-title"><span>Demo of</span> &lt;picture&gt; tag</h2>
+		<div class="demo responsive-img">
+			<picture>
+				<source
+				    media="(min-width: 1200px)"
+				    srcset="img/banner-desktop.jpg">
+				<source
+				    media="(min-width: 960px)"
+				    srcset="img/banner-laptop.jpg">
+				<source
+				    media="(min-width: 480px)"
+				    srcset="img/banner-tab.jpg">
+				<source
+				    srcset="img/banner-mobile.jpg">
+				<img src="img/banner-laptop.jpg" alt="fallback">
+			</picture>
+		</div><!-- eo .demo -->
+
+
+
+		<h2 class="sub-title"><span>Demo of</span> responsive video embed</h2>
+
+<div class="video-wrap">
+		<iframe  src="https://www.youtube.com/embed/Nj-hdQMa3uA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+<div class="adjacent-demo">
+	<h2 class="ad-heading">Adjacent Selector E + F</h2>
+	<p>This is the Adjacent Tag</p>
+	<p>sub sequent tgs</p>
+	<h3>Some heading</h3>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque exercitationem sequi ducimus quisquam asperiores consequuntur dolore tenetur accusantium velit quaerat tempore rem, provident atque, doloremque accusamus consequatur veniam. Nesciunt, aperiam.</p>
+</div>
+
+<div class="sibling-demo">
+	<h2 class="sd-heading">Adjacent Selector E + F</h2>
+	<p>This is the Adjacent Tag</p>
+	<p>sub sequent tgs</p>
+	<h3>Some heading</h3>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque exercitationem sequi ducimus quisquam asperiores consequuntur dolore tenetur accusantium velit quaerat tempore rem, provident atque, doloremque accusamus consequatur veniam. Nesciunt, aperiam.</p>
+</div>
 
 
 
@@ -81,26 +245,6 @@
   </footer>
 
 
-
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-
-<script>
-  $(document).ready(function () {
-    $('.box1 img').click(function (e) {
-      tracker = $(this).hasClass('rotate-90-tr-cw-open');
-      if(tracker){
-        $(this).removeClass('rotate-90-tr-cw-open');
-        $(this).addClass('rotate-90-tr-cw-close');
-      } else{
-        $(this).removeClass('rotate-90-tr-cw-close');
-        $(this).addClass('rotate-90-tr-cw-open');
-      }
-    });
-  });
-</script>
 
 
 

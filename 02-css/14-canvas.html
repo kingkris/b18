@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Journey - Learning style by styling</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+
+
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:400,700|Roboto:300,400" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/14-canvas.css">
+
+
+
+
+</head>
+<body dir="ltr">
+  <!-- This is a comment -->
+  <header class="page-header">
+    <h1><a href="index.html">CSS Journey  <small>Learning style by styling</small></a></h1>
+    <nav>
+      <ul class="main-nav">
+        <li><a href="01-type.html">Type</a></li>
+        <li><a href="02-block.html">Block</a></li>
+        <li><a href="03-list.html">List</a></li>
+        <li><a href="04-backgrounds.html">Background</a></li>
+        <li><a href="05-border.html">Border</a></li>
+        <li><a href="06-box.html">Box</a></li>
+        <li><a href="07-position.html">Position</a></li>
+        <li><a href="08-at-rules.html">@rules</a></li>
+        <li><a href="09-font-icons.html">Font Icons</a></li>
+        <li><a href="10-animations.html">Animations</a></li>
+        <li><a href="11-flex.html">Flex</a></li>
+        <li><a href="12-grids.html">Grids</a></li>
+        <li><a href="13-audio-video-images.html">Video, Audio & Images</a></li>
+        <li class="active"><a href="14-canvas.html">Canvas</a></li>
+        <li><a href="15-tables.html">Tables</a></li>
+        <li><a href="16-emails.html">Emails</a></li>
+        <li><a href="17-forms.html">Forms</a></li>
+        <li><a href="18-psd-to-html.html">PSD to HTML</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <div class="demo-wrap">
+      <h2>Resources</h2>
+      <ul>
+        <li><a href="https://www.google.com/webdesigner/" target="blank">Google Webdesigner - a tool create beautiful canvas ads</a></li>
+        <li><a href="https://www.adobe.com/in/products/animate.html" target="blank">Adobe  Animate - a tool create beautiful canvas animations</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial" target="blank">MDN - Canvas tutorial</a></li>
+        <li><a href="https://www.html5canvastutorials.com/" target="blank">html5 canvas Tutorials</a></li>
+        <li><a href="https://flaviocopes.com/canvas/" target="blank">HTML Canvas API Tutorial</a></li>
+      </ul>
+    </div>
+
+    <h2>A Canvas example</h2>
+    <div class="canvas-wrap">
+        <canvas></canvas>
+    </div>
+  </section>
+
+  <footer class="page-footer">
+    <p>&copy; 2019, all rights reserved, <a href="https://www.htmlden.com"></a></p>
+  </footer>
+
+
+
+<script>
+const canvas = document.querySelector('canvas')
+canvas.width = window.innerWidth
+canvas.height = window.innerHeight
+const c = canvas.getContext('2d')
+
+const circlesCount = 800
+
+const colorArray = [
+  '#046975',
+  '#2EA1D4',
+  '#3BCC2A',
+  '#FFDF59',
+  '#FF1D47'
+]
+
+const debounce = (func) => {
+  let timer
+  return (event) => {
+    if (timer) { clearTimeout(timer) }
+    timer = setTimeout(func, 100, event)
+  }
+}
+
+window.addEventListener('resize', debounce(() => {
+  canvas.width = window.innerWidth
+  canvas.height = window.innerHeight
+
+  init()
+}))
+
+const init = () => {
+  for (let i = 0; i < circlesCount; i++) {
+    const radius = Math.random() * 20 + 1
+    const x = Math.random() * (innerWidth - radius  * 2) + radius
+    const y = Math.random() * (innerHeight - radius  * 2) + radius
+    const dx = (Math.random() - 0.5) * 2
+    const dy = (Math.random() - 0.5) * 2
+
+    const circle = new Circle(x, y, dx, dy, radius)
+    circle.draw()
+  }
+}
+
+const Circle = function(x, y, dx, dy, radius) {
+  this.x = x
+  this.y = y
+  this.dx = dx
+  this.dy = dy
+  this.radius = radius
+  this.minRadius = radius
+  this.color = colorArray[Math.floor(Math.random() * colorArray.length)]
+
+  this.draw = function() {
+    c.beginPath()
+    c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false)
+    c.strokeStyle = 'black'
+    c.stroke()
+    c.fillStyle = this.color
+    c.fill()
+  }
+}
+
+init()
+
+</script>
+
+</body>
+</html>

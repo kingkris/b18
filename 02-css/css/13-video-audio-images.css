@@ -151,13 +151,53 @@ http://animista.net/
   text-transform: uppercase;
 }
 
+/* responsive video embed */
+
+.video-wrap{
+  max-width: 1500px;
+  margin: 20px auto 50px;
+  border: 10px solid #0005;
+  position: relative;
+  overflow:hidden;
+}
+.video-wrap:after{
+  content: "";
+  width: 100%;
+  display: block;
+  padding-top: 56.25%;
+}
+.video-wrap iframe{
+  width:100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  border: 5px solid #000;
+}
+
+/* adjascent selector demo */
+
+.adjacent-demo{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 15px;
+}
+.ad-heading + p {
+  color: red;
+  font-size: 2em;
+}
 
 
+/* sibling selector demo */
 
-
-
-
-
-
-
-
+.sibling-demo{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 15px;
+}
+.sd-heading ~ p {
+  color: red;
+  font-size: 2em;
+}

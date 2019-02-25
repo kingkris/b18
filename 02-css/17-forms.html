@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Journey - Learning style by styling</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+
+
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:400,700|Roboto:300,400" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/15-forms.css">
+
+
+
+
+</head>
+<body dir="ltr">
+  <!-- This is a comment -->
+  <header class="page-header">
+    <h1><a href="index.html">CSS Journey  <small>Learning style by styling</small></a></h1>
+    <nav>
+      <ul class="main-nav">
+        <li><a href="01-type.html">Type</a></li>
+        <li><a href="02-block.html">Block</a></li>
+        <li><a href="03-list.html">List</a></li>
+        <li><a href="04-backgrounds.html">Background</a></li>
+        <li><a href="05-border.html">Border</a></li>
+        <li><a href="06-box.html">Box</a></li>
+        <li><a href="07-position.html">Position</a></li>
+        <li><a href="08-at-rules.html">@rules</a></li>
+        <li><a href="09-font-icons.html">Font Icons</a></li>
+        <li><a href="10-animations.html">Animations</a></li>
+        <li><a href="11-flex.html">Flex</a></li>
+        <li><a href="12-grids.html">Grids</a></li>
+        <li><a href="13-audio-video-images.html">Video, Audio & Images</a></li>
+        <li><a href="14-canvas.html">Canvas</a></li>
+        <li><a href="15-tables.html">Tables</a></li>
+        <li><a href="16-emails.html">Emails</a></li>
+        <li class="active"><a href="17-forms.html">Forms</a></li>
+        <li><a href="18-psd-to-html.html">PSD to HTML</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <div class="demo-wrap">
+      <h2>Resources</h2>
+      <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial" target="blank">MDN - Canvas tutorial</a></li>
+        <li><a href="https://www.html5canvastutorials.com/" target="blank">html5 canvas Tutorials</a></li>
+        <li><a href="https://flaviocopes.com/canvas/" target="blank">HTML Canvas API Tutorial</a></li>
+      </ul>
+    </div>
+
+    <div class="demo-wrap">
+
+        <div class="cover-pic">
+          <h1> “Some people never go crazy. What truly horrible lives they must lead.”
+          ― <cite>Charles Bukowski </cite></h1>
+        </div>
+    
+    
+    
+    
+    
+        <h2 class="sub-title"><span>Demo of</span> &lt;form&gt; tag with method="get"</h2>
+    
+        <div class="demo">
+          <form action="thankyou.html" method="get" name="getform" >
+            <input type="text" name="Username" placeholder="Enter your username" required maxlength="4" />
+            <input type="password" name="Pasword" placeholder="Enter your password" />
+            <input type="submit" value="Get Form Submit" formnovalidate>
+          </form>
+          <form action="thankyou.html" method="post" name="postform">
+            <input type="text" name="Username" placeholder="Enter your username" />
+            <input type="password" name="Pasword" placeholder="Enter your password" />
+            <input type="submit" value="Submitkhkjh">
+          </form>
+        </div><!-- eo .demo -->
+    
+        <h2 class="sub-title"><span>Demo of</span> &lt;fieldset &gt;, &lt;label &gt; </h2>
+        <div class="demo">
+          <form action="forms_submit" method="get" class="form1">
+            <fieldset>
+              <legend>Fieldset Demo</legend>
+              <p>Here we learn to use the fieldset tag</p>
+              <div class="f-row">
+                <label for="f-name">First Name</label>
+                <input type="text" name="fname" id="f-name" placeholder="Enter your first name">
+              </div><!-- /.f-row -->
+              <div class="f-row">
+                <label for="l-name">Last Name</label>
+                <input type="text" name="lname" id="l-name" placeholder="Enter your last name">
+              </div><!-- /.f-row -->
+              <div class="f-row">
+                <label>Last Name
+                  <input type="text" name="lname1" id="l-name1" placeholder="Enter your last name">
+                </label>
+              </div><!-- /.f-row -->
+            </fieldset>
+          </form>
+        </div><!-- /.demo -->
+    
+        <h2 class="sub-title"><span>Demo of</span> attributes like placeholder, required<sup>*</sup>, readonly<sup>*</sup>, disabled<sup>*</sup>, value, autofocus, maxlength   </h2>
+        <div class="demo">
+          <form action="forms_submit" method="get" class="form1">
+            <fieldset>
+              <legend>Form Attributes Demo</legend>
+              <div class="f-row">
+                <label for="f1-1">Placeholder</label>
+                <input type="text" name="fname" id="f1-1" placeholder="Enter your first name">
+              </div><!-- /.f-row -->
+              <div class="f-row">
+                <label for="f1-2">Required - icon bg</label>
+                <input type="text" name="f1-2" id="f1-2" placeholder="Enter your last name" required class="input-icon">
+                <div class="error-msg">You need to add your last name</div>
+              </div><!-- /.f-row -->
+    
+    
+    
+              <div class="f-row">
+                <label for="f1-22">Required - font icon</label>
+                <div class="input-font-icon">
+                  <input type="text" name="f1-22" id="f1-22" placeholder="Enter your last name">
+                </div>
+                <div class="error-msg">You need to add your last name</div>
+              </div><!-- /.f-row -->
+    
+    
+              <div class="f-row">
+                <label for="f1-3">Error Message</label>
+                <input type="email" name="f1-3" id="f1-3" placeholder="Enter your email" required>
+                <div class="error-msg">You need to enter your correct email</div>
+              </div><!-- /.f-row -->
+              <div class="f-row">
+                <label for="f1-4">Readonly and Value</label>
+                <input type="email" name="f1-4" id="f1-4" placeholder="Enter your email" readonly value="kris@htmlden.com">
+                <div class="error-msg">You need to enter your correct email</div>
+              </div><!-- /.f-row -->
+              <div class="f-row">
+                <label for="f1-5">Disabled and value</label>
+                <input type="email" name="f1-5" id="f1-5" placeholder="Enter your email" disabled value="kris@htmlden.com">
+                <div class="error-msg">You need to enter your correct email</div>
+              </div><!-- /.f-row -->
+              <div class="f-row">
+                <label for="f1-6">autofocus</label>
+                <input type="email" name="f1-6" id="f1-6" placeholder="Enter your email" autofocus value="kris@htmlden.com">
+                <div class="error-msg">You need to enter your correct email</div>
+              </div><!-- /.f-row -->
+              <div class="f-row">
+                <label for="f1-7">maxlength</label>
+                <input type="text" name="f1-7" id="f1-7" placeholder="You can enter only 5 characters" maxlength="5" required >
+                <div class="error-msg">You have to enter only 5 characters</div>
+              </div><!-- /.f-row -->
+              <div class="f-row">
+                <input type="submit" name="" value="Submit">
+              </div>
+    
+            </fieldset>
+          </form>
+        </div><!-- /.demo -->
+        <h2 class="sub-title"><span>Demo of</span> &lt;input&gt; tag with type attribute</h2>
+        <div class="demo">
+          <form action="forms_submit" method="get" class="form1">
+            <fieldset>
+              <legend>Input tag with basic type</legend>
+              <div class="f-row">
+                <label for="f2-1">text</label>
+                <input type="text" name="f2-1" id="f2-1" placeholder="Inout type text">
+              </div><!-- /.f-row -->
+              <div class="f-row">
+                <label for="f2-1">password</label>
+                <input type="password" name="f2-1" id="f2-1" placeholder="Inout type password" class="input-box">
+              </div><!-- /.f-row -->
+    
+              <div class="f-row">
+                <p>Radio group</p>
+                <div class="rd-row">
+                  <input type="radio" id="f2-rd1" name="f2-rd" value="Option 1" >
+                  <label for="f2-rd1">Option 1</label>
+                </div>
+                <div class="rd-row">
+                  <input type="radio" id="f2-rd2" name="f2-rd" value="Option 2" >
+                  <label for="f2-rd2">Option 2</label>
+                </div>
+                <div class="rd-row">
+                  <input type="radio" id="f2-rd3" name="f2-rd" value="Option 3" checked >
+                  <label for="f2-rd3">Option 3 - preselected </label>
+                </div>
+                <div class="rd-row">
+                  <input type="radio" id="f2-rd4" name="f2-rd" value="Option 4" disabled >
+                  <label for="f2-rd4">Option 4 - disabled</label>
+                </div>
+              </div><!-- /.f-row -->
+    
+              <div class="f-row">
+                <p>Checkboxes group</p>
+                <div class="rd-row">
+                  <input type="checkbox" id="f2-cb1" name="f2-cb" value="Option 1" >
+                  <label for="f2-cb1">Option 1</label>
+                </div>
+                <div class="rd-row">
+                  <input type="checkbox" id="f2-cb2" name="f2-cb" value="Option 2" >
+                  <label for="f2-cb2">Option 2</label>
+                </div>
+                <div class="rd-row">
+                  <input type="checkbox" id="f2-cb3" name="f2-cb" value="Option 3" >
+                  <label for="f2-cb3">Option 3</label>
+                </div>
+                <div class="rd-row">
+                  <input type="checkbox" id="f2-cb4" name="f2-cb" value="Option 4" >
+                  <label for="f2-cb4">Option 4</label>
+                </div>
+              </div><!-- /.f-row -->
+              <div class="f-row">
+                <p>Checkboxes with styles</p>
+                <div class="rd-row">
+                  <input type="checkbox" id="f2-acb1" name="f2-acb" value="Option 1" >
+                  <label for="f2-acb1">Option 1</label>
+                </div>
+                <div class="rd-row">
+                  <input type="checkbox" id="f2-acb2" name="f2-acb" value="Option 2" >
+                  <label for="f2-acb2">Option 2</label>
+                </div>
+                <div class="rd-row">
+                  <input type="checkbox" id="f2-acb3" name="f2-acb" value="Option 3" >
+                  <label for="f2-acb3">Option 3</label>
+                </div>
+                <div class="rd-row">
+                  <input type="checkbox" id="f2-acb4" name="f2-acb" value="Option 4" >
+                  <label for="f2-acb4">Option 4</label>
+                </div>
+                <div class="f-row">
+                  <p>Few links to check</p>
+                  <div class="info-text">
+                    <a href="https://tympanus.net/codrops/tag/checkbox/">Radio buttons</a>
+                  </div>
+                  <div class="info-text">
+                    <a href="https://tympanus.net/Development/AnimatedCheckboxes/">Animated Dropdowns</a>
+                  </div>
+                  <div class="info-text">
+                    <a href="https://tympanus.net/Tutorials/CustomDropDownListStyling/">Dropdowns</a>
+                  </div>
+                  <div class="info-text">
+                    <a href="https://css-tricks.com/almanac/properties/s/scrollbar/">Styling Scrollbars</a>
+                  </div>
+                  <div class="info-text">
+                    <a href="https://codepen.io/devstreak/pen/dMYgeO">Codepen Styling Scrollbars</a>
+                  </div>
+                </div>
+              </div><!-- /.f-row -->
+              <div class="f-row">
+                <label for="f2-3">file</label>
+                <input type="file" name="f2-3" id="f2-3" placeholder="Input type file" class="input-box">
+              </div><!-- /.f-row -->
+    
+              <div class="f-row">
+                <label for="f2-4">image</label>
+                <input type="image" name="f2-4" id="f2-4" src="img/button.png">
+              </div><!-- /.f-row -->
+              <div class="f-row">
+                <label for="f2-5">button</label>
+                <input type="button" name="f2-5" id="f2-5" value="a dummy button">
+              </div><!-- /.f-row -->
+              <div class="f-row">
+                <label for="f2-6">submit</label>
+                <input type="submit" name="f2-6" id="f2-6" value="a submit button">
+              </div><!-- /.f-row -->
+              <div class="f-row">
+                <label for="f2-7">reset</label>
+                <input type="reset" name="f2-7" id="f2-7" value="a reset button">
+              </div><!-- /.f-row -->
+              <div class="f-row">
+                <label for="f2-8">hidden</label>
+                <input type="hidden" name="f2-8" id="f2-8" value="hidden fields are used to pass on some values to other pages">
+              </div><!-- /.f-row -->
+            </fieldset>
+            <fieldset>
+              <legend>demo of textarea</legend>
+              <div class="f-row">
+                <label for="f2-9">textarea</label>
+                <textarea name="f2-9" id="f2-9" placeholder="This is a textarea" class="input-box input-txtarea">This would appear inside textarea</textarea>
+              </div><!-- /.f-row -->
+            </fieldset>
+            <fieldset>
+              <legend>demo of select</legend>
+              <div class="f-row">
+                <label for="f2-10">select</label>
+                <select name="f2-10" id="f2-10" class="input-box">
+                  <option value="">Choose your city</option>
+                  <option value="Mysuru">Mysuru</option>
+                  <option value="Bengaluru">Bengaluru</option>
+                  <option value="Tumakuru">Tumakuru</option>
+                  <option value="Managaluru">Managaluru</option>
+                  <option value="Madduru">Mysuru</option>
+                </select>
+              </div><!-- /.f-row -->
+              <div class="f-row">
+                <label for="f2-11">select - multiple</label>
+                <select name="f2-11" id="f2-11" class="input-box input-select" multiple>
+                  <option value="">Choose your city</option>
+                  <option value="Mysuru">Mysuru</option>
+                  <option value="Bengaluru">Bengaluru</option>
+                  <option value="Tumakuru">Tumakuru</option>
+                  <option value="Mangaluru">Mangaluru</option>
+                  <option value="Madduru">Madduru</option>
+                  <option value="Madduru">Madduru</option>
+                  <option value="Madduru">Madduru</option>
+                  <option value="Madduru">Madduru</option>
+                  <option value="Madduru">Madduru</option>
+                  <option value="Madduru">Madduru</option>
+                  <option value="Madduru">Madduru</option>
+                </select>
+              </div><!-- /.f-row -->
+              <div class="f-row">
+                <label for="f2-12">select - optgroup</label>
+                <select name="f2-12" id="f2-12" class="input-box">
+                  <option value="">Choose your city</option>
+                  <optgroup label="Major Cities">
+                    <option value="Mysuru">Mysuru</option>
+                    <option value="Bengaluru">Bengaluru</option>
+                    <option value="Tumakuru">Tumakuru</option>
+                    <option value="Mangaluru">Mangaluru</option>
+                  </optgroup>
+                  <optgroup label="Other Cities">
+                    <option value="Madduru">Madduru</option>
+                    <option value="Mandya">Mandya</option>
+                    <option value="Kolar">Kolar</option>
+                    <option value="Hosapete">Hosapete</option>
+                    <option value="Ramanagara">Ramanagara</option>
+                    <option value="Channapattana">Channapattana</option>
+                    <option value="Malavalli">Malavalli</option>
+                  </optgroup>
+                </select>
+              </div><!-- /.f-row -->
+              <div class="f-row">
+                <label for="f2-12">select  - preselected</label>
+                <select name="f2-12" id="f2-12" class="input-box">
+                  <option value="">Choose your city</option>
+                  <optgroup label="Major Cities">
+                    <option value="Mysuru">Mysuru</option>
+                    <option value="Bengaluru">Bengaluru</option>
+                    <option value="Tumakuru">Tumakuru</option>
+                    <option value="Mangaluru">Mangaluru</option>
+                  </optgroup>
+                  <optgroup label="Other Cities">
+                    <option value="Madduru" selected>Madduru</option>
+                    <option value="Mandya">Mandya</option>
+                    <option value="Kolar">Kolar</option>
+                    <option value="Hosapete">Hosapete</option>
+                    <option value="Ramanagara">Ramanagara</option>
+                    <option value="Channapattana">Channapattana</option>
+                    <option value="Malavalli">Malavalli</option>
+                  </optgroup>
+                </select>
+              </div><!-- /.f-row -->
+              <div class="f-row">
+                <label for="f2-112">select2 - jQuery plugin</label>
+                <select name="f2-112" id="f2-112" class="input-box city-dropdown">
+                  <option value="">Choose your city</option>
+                  <optgroup label="Major Cities">
+                    <option value="Mysuru">Mysuru</option>
+                    <option value="Bengaluru">Bengaluru</option>
+                    <option value="Tumakuru">Tumakuru</option>
+                    <option value="Mangaluru">Mangaluru</option>
+                  </optgroup>
+                  <optgroup label="Other Cities">
+                    <option value="Madduru" selected>Madduru</option>
+                    <option value="Mandya">Mandya</option>
+                    <option value="Kolar">Kolar</option>
+                    <option value="Hosapete">Hosapete</option>
+                    <option value="Ramanagara">Ramanagara</option>
+                    <option value="Channapattana">Channapattana</option>
+                    <option value="Malavalli">Malavalli</option>
+                  </optgroup>
+                </select>
+              </div><!-- /.f-row -->
+              <div class="f-row">
+                <label for="f2-113">select2 - jQuery plugin</label>
+                <select name="f2-113" id="f2-113" class="input-box">
+                  <option value="">Choose your city</option>
+                  <optgroup label="Major Cities">
+                    <option value="Mysuru">Mysuru</option>
+                    <option value="Bengaluru">Bengaluru</option>
+                    <option value="Tumakuru">Tumakuru</option>
+                    <option value="Mangaluru">Mangaluru</option>
+                  </optgroup>
+                  <optgroup label="Other Cities">
+                    <option value="Madduru" selected>Madduru</option>
+                    <option value="Mandya">Mandya</option>
+                    <option value="Kolar">Kolar</option>
+                    <option value="Hosapete">Hosapete</option>
+                    <option value="Ramanagara">Ramanagara</option>
+                    <option value="Channapattana">Channapattana</option>
+                    <option value="Malavalli">Malavalli</option>
+                  </optgroup>
+                </select>
+              </div><!-- /.f-row -->
+            </fieldset>
+            <fieldset>
+              <legend>demo of input with html5 types</legend>
+              <div class="f-row">
+                <label for="f3-1">input - email</label>
+                <input type="email" name="f3-1" placeholder="Your email id eg. kris@htmlden.com" id="f3-1">
+                <span class="info-text">Check <a href="http://html5pattern.com/">html5 patterns</a></span>
+              </div><!-- /.f-row -->
+              <div class="f-row">
+                <label for="f3-2">input - url</label>
+                <input type="url" name="f3-2" placeholder="Your website eg. www.htmlden.com" id="f3-2" class="input-box">
+              </div><!-- /.f-row -->
+              <div class="f-row">
+                <label for="f3-3">input - tel</label>
+                <input type="tel" name="f3-3" placeholder="Your mobile eg. +91 98804 12345" id="f3-3" class="input-box">
+              </div><!-- /.f-row -->
+              <div class="f-row">
+                <label for="f3-4">input - number</label>
+                <input type="number" name="f3-4" placeholder="Your age" id="f3-4">
+              </div><!-- /.f-row -->
+              <div class="f-row">
+                <label for="f3-5">number - min, max, step</label>
+                <input type="number" name="f3-5" placeholder="Your age" id="f3-5" min="100" max="200" step="10">
+              </div><!-- /.f-row -->
+              <div class="f-row">
+                <label for="f3-6">input - range</label>
+                <input type="range" name="f3-6" id="f3-6" min="0" max="1000" step="100" >
+              </div><!-- /.f-row -->
+              <div class="f-row">
+                <label for="f3-7">input - date</label>
+                <input type="date" name="f3-7" id="f3-7" >
+    
+                <div id="alert"></div>
+                <div class="alert alert-info">
+                  <p id="target">Output Date</p>
+                </div>
+              </div><!-- /.f-row -->
+              <div class="f-row">
+                <label for="f3-8">input - color</label>
+                <input type="color" name="f3-8" id="f3-8" >
+    
+              </div><!-- /.f-row -->
+              <div class="f-row">
+                <label for="f3-9">input - search</label>
+                <input type="serach" name="f3-9" id="f3-9" >
+                <span class="info-text">Check <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/search">mdn search</a> <a href="https://css-tricks.com/webkit-html5-search-inputs/">CSS tricks search</a></span>
+              </div><!-- /.f-row -->
+            </fieldset>
+    
+              <div class="last-row">
+                <input type="submit" name="" value="Submit">
+                <input type="reset" name="" value="Reset">
+              </div>
+    
+          </form>
+        </div><!-- /.demo -->
+    
+        <h2 class="sub-title"><span>Demo of</span> Responsive forms and styling them</h2>
+        <div class="enquiry-wrap">
+          <form action="enquiry-form" method="get" class="enquiry-form">
+            <div class="en-row">
+              <label for=""></label>
+    
+            </div>
+          </form>
+        </div><!-- /.demo -->
+    
+    
+    
+      </div><!-- /.container -->
+    
+    
+
+
+  </section>
+
+  <footer class="page-footer">
+    <p>&copy; 2019, all rights reserved, <a href="https://www.htmlden.com"></a></p>
+  </footer>
+
+
+
+</body>
+</html>
