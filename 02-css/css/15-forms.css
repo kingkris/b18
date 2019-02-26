@@ -24,7 +24,7 @@ CSS @ Rules
     5.  @keyframes
 
 
-
+ 
 
 Important links
 +++++++++++++++++++++++++++++++++++++++++++
@@ -57,7 +57,7 @@ form{
   border-radius: 10px;
 }
 fieldset{
-  border: dotted 1px #eee;
+  border: dotted 1px #000;
   margin-top: 15px;
 }
 fieldset legend{
@@ -292,20 +292,4 @@ fieldset .f-row:last-child{
   text-align: center;
   color: #FFF;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
